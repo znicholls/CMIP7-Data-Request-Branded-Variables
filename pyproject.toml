@@ -4,6 +4,7 @@ authors = [
 ]
 requires-python = ">=3.9"
 dependencies = [
+    "cmip-branded-variable-mapper",
     "pre-commit>=3.3.1",
 ]
 name = "prototype"
@@ -13,6 +14,9 @@ readme = "README.md"
 
 [tool.uv]
 package = false
+
+[tool.uv.sources]
+cmip-branded-variable-mapper = { git = "https://github.com/znicholls/CMIP-branded-variable-mapper", rev = "update-mapping-ah" }
 
 [tool.ruff.lint]
 select = [
