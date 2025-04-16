@@ -1,0 +1,43 @@
+[project]
+authors = [
+    { name = "Zebedee Nicholls", email = "zebedee.nicholls@climate-energy-college.org"},
+]
+requires-python = ">=3.9"
+dependencies = [
+    "cmip-branded-variable-mapper",
+    "pre-commit>=3.3.1",
+]
+name = "prototype"
+version = "0.1.0"
+description = "Application of the CMIP branded variable mapper to the CMIP7 data request"
+readme = "README.md"
+
+[tool.uv]
+package = false
+
+[tool.uv.sources]
+cmip-branded-variable-mapper = { git = "https://github.com/znicholls/CMIP-branded-variable-mapper", rev = "update-mapping-ah" }
+
+[tool.ruff.lint]
+select = [
+    "E",
+    "W",
+    "F",
+    "I",
+    "D",
+    "PL",
+    "TRY",
+    "NPY",
+    "RUF",
+    "UP",
+    "S",
+]
+unfixable = [ ]
+ignore = [
+    "D200",
+    "D400",
+    "UP007",
+]
+
+[tool.ruff.lint.pydocstyle]
+convention = "numpy"
