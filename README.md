@@ -51,12 +51,6 @@ For example, to run Python within the virtual environment, run
 uv run python
 ```
 
-As another example, to run a notebook server, run
-
-```sh
-uv run jupyter lab
-```
-
 <!--- Other documentation and instructions can then be added here as you go,
 perhaps replacing the other instructions above as they may become redundant.
 -->
@@ -116,11 +110,6 @@ In this repository, we use the following tools:
       files etc.)
     - (for more thoughts on the usefulness of pre-commit, see
       [general principles: automation](https://gitlab.com/znicholls/mullet-rse/-/blob/main/book/general-principles/automation.md)
-    - track your notebooks using
-    [jupytext](https://jupytext.readthedocs.io/en/latest/index.html)
-    (for more thoughts on the usefulness of Jupytext, see
-    [tips and tricks: Jupytext](https://gitlab.com/znicholls/mullet-rse/-/blob/main/book/tips-and-tricks/managing-notebooks-jupytext.md))
-        - this avoids nasty merge conflicts and incomprehensible diffs
 
 ## Original template
 

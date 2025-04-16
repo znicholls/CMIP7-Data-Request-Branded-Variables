@@ -3,7 +3,7 @@ _commit: v0.4.1
 _src_path: gl:openscm/copier-basic-python-repository
 email: zebedee.nicholls@climate-energy-college.org
 name: Zebedee Nicholls
-notebooks: true
+notebooks: false
 package_manager: uv
 project_description_short: Application of the CMIP branded variable mapper to the
     CMIP7 data request
